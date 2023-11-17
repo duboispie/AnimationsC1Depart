@@ -26,8 +26,8 @@ public class OuvrirPorte : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player"){
-            _porteGauche.GetComponent<Animator>().SetBool("Ouvre", true);
-            _porteDroite.GetComponent<Animator>().SetBool("Ouvre", true);
+            _porteGauche.GetComponent<Animator>().SetBool("Ouvrir", true);
+            _porteDroite.GetComponent<Animator>().SetBool("Ouvrir", true);
         }
     }
 
@@ -37,8 +37,8 @@ public class OuvrirPorte : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         if(other.tag == "Player"){
-            _porteGauche.GetComponent<Animator>().SetBool("Ouvre", false);
-            _porteDroite.GetComponent<Animator>().SetBool("Ouvre", false);
+            _porteGauche.GetComponent<Animator>().SetBool("Ouvrir", false);
+            _porteDroite.GetComponent<Animator>().SetBool("Ouvrir", false);
         }
     }
 }
