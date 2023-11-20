@@ -9,7 +9,7 @@ public class PrendreTorche : MonoBehaviour
     [SerializeField] GameObject _torcheMain;
     [SerializeField] GameObject _player;
     
-  void OnTriggerEnter(Collider other){
+  private void OnTriggerEnter(Collider other){
 
             if(other.tag == "Player"){
             
