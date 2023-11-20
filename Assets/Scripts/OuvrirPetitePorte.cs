@@ -10,11 +10,19 @@ public class OuvrirPetitePorte : MonoBehaviour
     [SerializeField] GameObject _clé;
 
     
-    private void onTriggerEnter(Collider others){
+    void OnTriggerEnter(Collider others){
 
         if(others.tag == "Player"){
+
             _petitePorte.GetComponent<Animator>().SetBool("Ouvrir", true);
             _clé.SetActive(false);
+
         }
+
     }
+    
+         
 }
+
+    
+
